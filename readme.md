@@ -1,12 +1,10 @@
 Project 说明文档
 ==========
                               李欣泽 19302010033
-### GitHub地址与GitHub pages地址
-
-
-
-
-
+### GitHub地址与GitHub Pages地址
+仓库地址：
+https://github.com/Lixz0033/project19ss
+GitHub Pages 地址：
 
 ### 项目完成情况
 所有页面的要求基本全部完成，应该没有遗漏。
