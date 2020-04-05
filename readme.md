@@ -5,7 +5,7 @@ Project 说明文档
 仓库地址：
 https://github.com/Lixz0033/project19ss
 GitHub Pages 地址：
-
+https://lixz0033.github.io/project19ss/
 ### 项目完成情况
 所有页面的要求基本全部完成，应该没有遗漏。
 
