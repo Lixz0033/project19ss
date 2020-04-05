@@ -1,0 +1,115 @@
+.nav {
+    z-index: 100; /*确保导航栏不会被遮挡*/
+}
+
+.content {
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    min-width: 400px;
+    background-color: rgba(180, 180, 180, 0.4);
+    border-radius: 20px;
+    position: relative;
+    top: 80%;
+    z-index: 10;
+    overflow: visible;
+}
+
+#content_title {
+    border-radius: 3px;
+    background-color: rgba(150, 150, 150, 0.5);
+    height: 1.2em;
+    margin-top: -0.5em;
+}
+
+.content_main {
+    background-color: white;
+    min-height: 36em;
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.content div {
+    width: 100%;
+    padding: 1px;
+    margin-top: 0.5em;
+}
+
+
+.content_photo_description_container {
+    margin-top: 1em;
+    width: 90%;
+}
+
+.content_photo_description_container p {
+    width: 90%;
+    height: 50%;
+    word-break: normal;
+    margin-left: 5%;
+}
+
+.content_photo_detail {
+    height: 40%;
+    min-height: 18em;
+}
+
+.content_photo_detail > div {
+    float: left;
+    margin-left: 5%;
+    margin-top: 2em;
+    width: 40%;
+}
+
+table {
+    border: 2px solid grey;
+    width: 80%;
+    margin: 3%;
+}
+
+th {
+    text-align: left;
+    width: 40%;
+    background-color: rgba(200, 200, 200, 0.7);
+}
+
+tr {
+    border: 1px solid gray;
+}
+
+td {
+    width: 40%;
+    height: 2em;
+    background-color: rgba(240, 240, 240, 0.7);
+}
+
+.content_table tr td span {
+    color: red;
+    font-size: xx-large;
+    margin-left: 40%;
+}
+
+.content_photo_container {
+    width: 60%;
+    height: 12em;
+}
+
+.content_photo_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.content_photo_title {
+    text-align: center;
+}
+
+#content_button_favor {
+    margin-left: 3%;
+    border-radius: 3px;
+    border-width: 0;
+    color: white;
+    background-image: -webkit-linear-gradient(rgba(220, 0, 0, 0.3) 4%, rgba(220, 10, 10, 0.90) 70%);
+    background-color: rgba(240,10,10,0.7);
+    width: 80%;
+    height: 2em;
+    z-index: 100;
+}

@@ -1,0 +1,186 @@
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: -50px;
+    width: 90%;
+    min-width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
+    background-image: -webkit-linear-gradient(rgba(41, 41, 41, 0.45) 4%, rgba(24, 23, 23, 0.85) 51%); /*导航栏颜色渐变*/
+    background-color: black;
+    box-shadow: 1px 1px 10px #000000; /*导航栏阴影*/
+    z-index: 100; /*确保导航栏不会被遮挡*/
+}
+
+.nav > ul > li {
+    list-style: none;
+}
+
+.nav ul li:hover {
+    background: rgba(50, 50, 50, 0.8);
+}
+
+.nav > ul > li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "微软雅黑", "宋体", serif;
+    text-align: left;
+    line-height: 40px;
+}
+
+.nav_list_left {
+    float: left;
+    margin-left: 30px;
+}
+
+.nav_list_right {
+    float: right;
+    margin-right: 40px;
+}
+
+.nav_list_right_li {
+    display: none;
+}
+
+.nav > ul > li:hover > ul > li {
+    display: block;
+}
+
+.nav > ul > li > ul {
+    background-color: rgba(20, 20, 20, 0.4);
+    z-index: 999;
+    position: absolute;
+}
+
+#user_default_image {
+    border-radius: 4px;
+}
+
+#nav_search {
+    background: rgba(200, 200, 200, 0.5);
+}
+
+.content {
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    min-width: 400px;
+    background-color: rgba(180, 180, 180, 0.4);
+    float: inside;
+    border-radius: 20px;
+    position: relative;
+    top: 80%;
+    z-index: 10;
+    overflow: visible;
+}
+
+form {
+    padding-top: 1em;
+    padding-left: 0.3em;
+    z-index: 10;
+}
+
+.content_title {
+    border-radius: 3px;
+    background-color: rgba(150, 150, 150, 0.5);
+    height: 1.2em;
+    margin-top: -0.5em;
+}
+
+.content_part {
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 90%;
+    height: 14em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.content_img_container {
+    margin-top: 1em;
+    height: 12em;
+    width: 48%;
+    overflow: hidden; /*用于只显示图片部分*/
+}
+
+.content_img { /*用于只显示部分图片部分*/
+    height: 14em;
+    width: 12em;
+    overflow: hidden;
+    margin: 5px 10px 20px 10%;
+}
+
+.content_text_container {
+    margin-top: 1em;
+    margin-left: 0;
+    width: 48%;
+    height: 12em;
+}
+
+.content div div div {
+    float: left;
+    margin-left: 1%;
+}
+
+p {
+    width: 90%;
+    height: 9em;
+    word-break: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+}
+
+.content > div {
+    margin-top: 0.5em;
+}
+
+.content_page {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content_page_number {
+    color: red;
+}
+
+input, #second_textarea {
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+    margin-left: 5%;
+}
+
+input[type=button], input[type=submit] {
+    border-width: 0;
+    border-radius: 3px;
+    color: white;
+    background-image: -webkit-linear-gradient(rgba(0, 220, 0, 0.3) 4%, rgba(10, 180, 10, 0.90) 70%);
+    background-color: rgba(10,240,10,0.8);
+    width: 6em;
+    height: 2em;
+    z-index: 20;
+}
+
+input[type=text], #second_textarea {
+    width: 90%;
+}
+
+input[type=text]:focus, input[type=password]:focus, #second_textarea:focus {
+    border: 1px solid tomato;
+}
+
+input[type="button"], input[type="submit"], input[type="checkbox"], input[type="radio"], select:hover {
+    cursor: pointer;
+}
+
+#second_textarea {
+    height: 4em;
+    resize: none;
+    overflow: visible;
+}

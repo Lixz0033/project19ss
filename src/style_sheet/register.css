@@ -1,0 +1,71 @@
+body {
+    background: url("../../img/background.png") fixed;
+    background-size: cover;
+    padding: 1em;
+    margin: 2em;
+}
+
+div {
+    padding: 0.1em;
+    margin: 0.1em;
+}
+
+#footer {
+    font-size: 12px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+#form_header {
+    text-align: center;
+}
+
+form {
+    padding-top: 1em;
+    padding-left: 0.3em;
+}
+
+.form_content {
+    height: 18em;
+    width: 300px;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    overflow: visible;
+}
+
+.form_information {
+    text-align: left;
+    width: 280px;
+}
+
+#form_register {
+    text-align: center;
+    background-image: -webkit-linear-gradient(rgba(10, 240, 10, 0.3) 4%, rgba(10, 180, 10, 0.90) 70%);
+    background-color: rgba(10,240,10,0.8);
+    color: white;
+    height: 2.4em;
+    border-width: 0;
+}
+
+#user_default_image {
+    border-radius: 10px;
+}
+
+input {
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 1px solid tomato;
+}

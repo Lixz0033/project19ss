@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload</title>
+    <link rel="stylesheet" href="style_sheet/Reset.css">
+    <link rel="stylesheet" href="style_sheet/nav.css">
+    <link rel="stylesheet" href="style_sheet/footer&background1.css">
+    <link rel="stylesheet" href="style_sheet/upload.css">
+    <script src="http://img9.tongzhuo100.com/js/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<div class="nav"><!--导航栏-->
+    <ul>
+        <img id="user_default_image" class="nav_list_left" src="../img/user_default_image.jpg" width="40" height="40">
+        <li id="nav_home" class="nav_list_left">
+            <a href="Home.html">Home</a>
+        </li>
+        <li id="nav_browser" class="nav_list_left">
+            <a href="Browser.html">Browser</a>
+        </li>
+        <li id="nav_search" class="nav_list_left">
+            <a href="Search.html">Search</a>
+        </li>
+        <li class="nav_list_right">
+            <a href="#">My account ▼</a>
+            <ul>
+                <li id="upload_image" class="nav_list_right_li">
+                    <a href="Upload.html"><img src="../img/upload.png" width="16" height="16" alt="图标1">Upload</a>
+                </li>
+                <li id="photo_image" class="nav_list_right_li">
+                    <a href="my_photo.html"><img src="../img/photo.png" width="16" height="16" alt="图标2">My Photo</a>
+                </li>
+                <li id="favor_image" class="nav_list_right_li">
+                    <a href="favor.html"><img src="../img/favor.png" width="16" height="16" alt="图标3">My Favorite</a>
+                </li>
+                <li id="login_image" class="nav_list_right_li">
+                    <a href="../index.html"><img src="../img/login.png" width="16" height="16" alt="图标4">Log in</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="content">
+    <div id="content_title"><h3>Upload</h3></div>
+    <div class="img_content">
+        <form action="">
+            <div class="img_container"><img src="" id="img0" alt="图片未上传"></div>
+            <label class="fileContainer">
+                Upload<input type="file" id="file0">
+            </label><br><br><br><br><br><br>
+        </form>
+    </div>
+    <div class="form_content"><!--表单内容-->
+        <form id="photo_form" action="my_photo.html" method="post">
+            <p>图片标题:</p>
+            <input class="form_information" type="text"><br>
+            <p>图片描述:</p>
+            <textarea class="form_information" cols="30" rows="10"></textarea><br>
+            <p>拍摄国家:</p>
+            <input class="form_information" type="text"><br>
+            <p>拍摄城市:</p>
+            <input class="form_information" type="text"><br>
+            <br><!--提交按钮-->
+            <input class="form_information" id="form_submit" type="submit" value="Submit" onclick="alert('上传成功')">
+        </form>
+    </div>
+</div>
+<div id="footer"><!--页尾-->
+    <span>Copyright &copy; 2019-2020 Web fundamental.All Rights Reserved.L0033</span>
+</div>
+<script>
+    $("#file0").change(function () {
+        var objUrl = getObjectURL(this.files[0]);
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#img0").attr("src", objUrl);
+            $("#img0").removeClass("hide");
+        }
+    });
+
+    //建立一個可存取到該file的url
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) { // basic
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) {
+            // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) {
+            // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+</script>
+</body>
+</html>

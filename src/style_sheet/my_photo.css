@@ -1,0 +1,94 @@
+.nav {
+    z-index: 100;/*确保导航栏不会被遮挡*/
+}
+
+.content {
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    min-width: 400px;
+    background-color: rgba(180, 180, 180, 0.4);
+    border-radius: 20px;
+    position: relative;
+    top: 80%;
+    z-index: 10;
+    overflow: visible;
+}
+
+#content_title {
+    border-radius: 3px;
+    background-color: rgba(150, 150, 150, 0.5);
+    height: 1.2em;
+    margin-top: -0.5em;
+}
+
+.content_part {
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 90%;
+    height: 14em;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: visible;
+}
+
+.content_img_container {
+    margin-top: 1em;
+    height: 12em;
+    width: 48%;
+    overflow: hidden; /*用于只显示图片部分*/
+}
+
+.content_img { /*用于只显示部分图片部分*/
+    height: 14em;
+    width: 12em;
+    overflow: hidden;
+    margin: 5px 10px 20px 10%;
+}
+
+.content_text_container {
+    margin-top: 1em;
+    margin-left: 0;
+    width: 48%;
+    height: 12em;
+}
+
+.content div div div {
+    float: left;
+    margin-left: 1%;
+}
+
+p {
+    width: 90%;
+    height: 9em;
+    word-break: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 9;
+}
+
+.content > div {
+    margin-top: 0.5em;
+}
+
+.content_page {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#content_page_number {
+    color: red;
+}
+
+input[type="button"] {
+    border-width: 0;
+    border-radius: 3px;
+    color: white;
+    background-image: -webkit-linear-gradient(rgba(0, 220, 0, 0.3) 4%, rgba(10, 180, 10, 0.90) 70%);
+    background-color: rgba(10,240,10,0.8);
+    width: 6em;
+    height: 2em;
+    z-index: 100;
+}

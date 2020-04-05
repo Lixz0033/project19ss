@@ -1,0 +1,215 @@
+/*nav*/
+.nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: -50px;
+    width: 90%;
+    min-width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 0px auto;
+    background-image: -webkit-linear-gradient(rgba(41, 41, 41, 0.45) 4%, rgba(24, 23, 23, 0.85) 51%); /*导航栏颜色渐变*/
+    background-color: black;
+    box-shadow: 1px 1px 10px #000000; /*导航栏阴影*/
+    z-index: 100; /*确保导航栏不会被遮挡*/
+}
+
+.nav > ul > li {
+    list-style: none;
+}
+
+.nav ul li:hover {
+    background: rgba(50, 50, 50, 0.8);
+}
+
+.nav > ul > li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "微软雅黑", "宋体", serif;
+    text-align: left;
+    line-height: 40px;
+}
+
+.nav_list_left {
+    float: left;
+    margin-left: 30px;
+}
+
+.nav_list_right {
+    float: right;
+    margin-right: 40px;
+}
+
+.nav_list_right_li {
+    display: none;
+}
+
+.nav > ul > li:hover > ul > li {
+    display: block;
+}
+
+.nav > ul > li > ul {
+    background-color: rgba(20, 20, 20, 0.4);
+    z-index: 999;
+    position: absolute;
+}
+
+#user_default_image {
+    border-radius: 4px;
+}
+
+#nav_browser {
+    background: rgba(200, 200, 200, 0.5);
+}
+
+/*content*/
+div {
+    margin-top: 0.5em;
+}
+
+/*content right part*/
+#content_right {
+    float: right;
+    margin-top: 1.3em;
+    margin-bottom: 3em;
+    margin-right: 10%;
+    width: 60%;
+    background-color: rgba(180, 180, 180, 0.4);
+    border-radius: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+#content_right div {
+    margin-bottom: 0.2em;
+}
+
+#content_title {
+    border-radius: 3px;
+    background-color: rgba(150, 150, 150, 0.5);
+    height: 1.2em;
+    margin-top: 0.8em;
+    margin-left: 1%;
+    width: 98%;
+}
+
+.content_display_col {
+    float: left;
+    width: 22%;
+    margin-left: 2%;
+    margin-right: 1%;
+}
+
+.content_display_container {
+    width: 80%;
+    height: 20%;
+    overflow: hidden;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+.content_display_img {
+    width: 12em;
+    height: 8em;
+    overflow: hidden;
+    margin: 5% 5% 5% 10%;
+}
+
+.content_page {
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#content_page_number {
+    color: red;
+}
+
+select {
+    border-width: 0;
+    width: 20%;
+    margin-left: 3%;
+}
+
+input[type=button] {
+    border-width: 0;
+    border-radius: 3px;
+    color: white;
+    background-image: -webkit-linear-gradient(rgba(0, 220, 0, 0.3) 4%, rgba(10, 180, 10, 0.90) 70%);
+    background-color: rgba(10, 240, 10, 0.8);
+    width: 6em;
+    height: 2em;
+    z-index: 100;
+}
+
+/*content left part*/
+#content_left {
+    float: left;
+    margin-top: 3.3em;
+    margin-left: 4%;
+    width: 20%;
+    background-color: rgba(180, 180, 180, 0.4);
+    border-radius: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+table {
+    border: 2px solid black;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+th {
+    text-align: left;
+    width: 40%;
+    background-color: rgba(200, 200, 200, 0.7);
+}
+
+tr {
+    border: 1px solid gray;
+}
+
+td {
+    width: 40%;
+    height: 1.4em;
+    background-color: rgba(240, 240, 240, 0.7);
+    text-align: center;
+}
+
+#content_left div {
+    margin-left: 5%;
+    text-align: center;
+}
+
+#content_left div p {
+    width: 90%;
+    margin-left: 0%;
+    margin-right: -54%;
+    margin-bottom: 1.8em;
+    float: left;
+}
+
+#content_left_search_button {
+    width: 18px;
+    height: 1.8em;
+    margin-top: 0.1em;
+    background-image: url("../../img/browser_search.png");
+    background-color: transparent;
+    background-size: 18px 1.8em;
+}
+
+input[type=text] {
+    width: 90%;
+    height: 1.4em;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+}
+
+input[type=text]:focus {
+    border: 1px solid tomato;
+}

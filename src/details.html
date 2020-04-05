@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>details</title>
+    <link rel="stylesheet" href="style_sheet/Reset.css">
+    <link rel="stylesheet" href="style_sheet/nav.css">
+    <link rel="stylesheet" href="style_sheet/footer&background1.css">
+    <link rel="stylesheet" href="style_sheet/details.css">
+</head>
+<body>
+<div class="nav"><!--导航栏-->
+    <ul>
+        <img id="user_default_image" class="nav_list_left" src="../img/user_default_image.jpg" width="40" height="40">
+        <li id="nav_home" class="nav_list_left">
+            <a href="Home.html">Home</a>
+        </li>
+        <li id="nav_browser" class="nav_list_left">
+            <a href="Browser.html">Browser</a>
+        </li>
+        <li id="nav_search" class="nav_list_left">
+            <a href="Search.html">Search</a>
+        </li>
+        <li class="nav_list_right">
+            <a href="#">My account ▼</a>
+            <ul>
+                <li id="upload_image" class="nav_list_right_li">
+                    <a href="Upload.html"><img src="../img/upload.png" width="16" height="16">Upload</a>
+                </li>
+                <li id="photo_image" class="nav_list_right_li">
+                    <a href="my_photo.html"><img src="../img/photo.png" width="16" height="16">My Photo</a>
+                </li>
+                <li id="favor_image" class="nav_list_right_li">
+                    <a href="favor.html"><img src="../img/favor.png" width="16" height="16">My Favorite</a>
+                </li>
+                <li id="login_image" class="nav_list_right_li">
+                    <a href="../index.html"><img src="../img/login.png" width="16" height="16">Log in</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="content">
+    <div>
+        <div id="content_title"><h3>Details</h3></div>
+        <div class="content_main">
+            <div class="content_photo_title">
+                <h2 style="font-size: x-large">这是标题<small style="font-size: small">&nbsp;&nbsp;&nbsp;by lxz</small></h2>
+            </div>
+            <div class="content_photo_detail">
+                <div class="content_photo_container">
+                    <img src="../img/detail_img.jpg" alt="图片详情">
+                </div>
+                <div class="content_right_part">
+                    <div>
+                        <table class="content_table">
+                            <tr>
+                                <th> Like Number</th>
+                            </tr>
+                            <tr>
+                                <td><span>99</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <table class="content_table">
+                            <tr>
+                                <th>Image Details</th>
+                            </tr>
+                            <tr>
+                                <td>Content:Scenery</td>
+                            </tr>
+                            <tr>
+                                <td>Country:China</td>
+                            </tr>
+                            <tr>
+                                <td>City:Shanghai</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div>
+                        <input id="content_button_favor" type="button" value="♥ 收藏" onclick="alert('已收藏')">
+                    </div>
+                </div>
+            </div>
+            <div class="content_photo_description_container">
+                <p><br>
+                    有对象的麻烦 <br>
+                    《C++程序设计语言》比《C程序设计语言》厚了几倍...果然有了对象就麻烦很多... <br><br>
+                    关于改bug <br>
+                    “我爱你”三个字，讲出来只要三秒钟，解释要三小时，证明却要一辈子。“bug”三个字母，发现需要三秒，找到需要三小时，debug却要一辈子。这真的是多么痛彻的领悟。<br><br>
+                    讨厌的事 <br>
+                    程序员最讨厌的四件事：写注释、写文档、别人不写注释、别人不写文档…… <br><br>
+                    记忆力 <br>
+                    发现程序员经常熬夜有三个弊端：第一，记忆力越来越差；第二，数数经常会数错；第四，记忆力越来越差。 <br><br>
+                    假如生活欺骗了你 <br>
+                    假如生活欺骗了你，找50个程序员问问为什么编程；假如生活让你想死，找50个程序员问问Bug改完了没有；假如你觉得生活拮据，找50个程序员问问工资涨了没有；假如你觉得活着无聊，找50个程序员问问他们一天都干了什么！<br><br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"><!--页尾-->
+    <span>Copyright &copy; 2019-2020 Web fundamental.All Rights Reserved.L0033</span>
+</div>
+</body>
+</html>

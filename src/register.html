@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="style_sheet/Reset.css">
+    <link rel="stylesheet" href="style_sheet/register.css">
+</head>
+<body>
+<div id="form">
+    <div id="form_header"><!--表单标题-->
+        <img id="user_default_image" src="../img/user_default_image.jpg" width="70" height="70" alt="这是用户默认头像">
+        <h2 id="title">Sign up for Fisher</h2>
+    </div>
+    <div class="form_content"><!--表单内容-->
+        <form action="../index.html" method="get">
+            <div>
+                <p>Username:</p>
+                <input class="form_information" type="text" placeholder="用户名"
+                       pattern="[0-9a-zA-Z_]+">
+            </div>
+            <div>
+                <p>E-mail:</p>
+                <input class="form_information" type="text"  placeholder="邮箱"
+                       pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
+            </div>
+            <div>
+                <p>Password:</p>
+                <input class="form_information" type="password"  placeholder="密码"
+                       pattern="[0-9a-zA-Z]{9,}">
+            </div>
+            <div>
+                <p>Confirm Your Password:</p>
+                <input class="form_information" type="password" placeholder="确认密码"
+                       pattern="[0-9a-zA-Z]{9,}">
+            </div>
+            <div><br><!--提交按钮-->
+                    <input class="form_information" id="form_register" type="submit" value="Sign up">
+            </div>
+        </form>
+    </div>
+</div>
+<div id="footer"><!--页尾-->
+    <span>Copyright &copy; 2019-2020 Web fundamental.All Rights Reserved.L0033</span>
+</div>
+</body>
+</html>

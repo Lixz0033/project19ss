@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Browser</title>
+    <link rel="stylesheet" href="style_sheet/Reset.css">
+    <link rel="stylesheet" href="style_sheet/browser.css">
+    <link rel="stylesheet" href="style_sheet/footer&background1.css">
+    <script type="text/javascript">
+        var prolist = ["China", "Japan", "Italy", "America"];
+        var allCityList = [
+            ["Shanghai", "Kunming", "Beijing", "Yantai"],
+            ["Tokyo", "Osaka", "Kamakura"],
+            ["Roma", "Milan", "Venice", "Florence"],
+            ["New York", "San Francisco", "Washington"],
+        ];
+
+        function set_select_country() {
+            var pro = document.getElementById("filter_country");
+            pro.length = prolist.length + 1;
+            for (var i = 1; i < pro.length; i++) {
+                pro[i].innerHTML = prolist[i - 1];
+                pro[i].value = i;
+            }
+        }
+
+        function set_select_city() {
+            var city = document.getElementById("filter_city");
+            var pro = document.getElementById("filter_country");
+            city.value = 0;
+            var cityList = allCityList[pro.value - 1];
+            city.length = cityList.length + 1;
+            for (var i = 1; i < city.length; i++) {
+                city[i].innerText = cityList[i - 1];
+                city[i].value = i;
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="nav"><!--导航栏-->
+    <ul>
+        <img id="user_default_image" class="nav_list_left" src="../img/user_default_image.jpg" width="40" height="40">
+        <li id="nav_home" class="nav_list_left">
+            <a href="Home.html">Home</a>
+        </li>
+        <li id="nav_browser" class="nav_list_left">
+            <a href="Browser.html">Browser</a>
+        </li>
+        <li id="nav_search" class="nav_list_left">
+            <a href="Search.html">Search</a>
+        </li>
+        <li class="nav_list_right">
+            <a href="#">My account ▼</a>
+            <ul>
+                <li id="upload_image" class="nav_list_right_li">
+                    <a href="Upload.html"><img src="../img/upload.png" width="16" height="16" alt="图标1">Upload</a>
+                </li>
+                <li id="photo_image" class="nav_list_right_li">
+                    <a href="my_photo.html"><img src="../img/photo.png" width="16" height="16" alt="图标2">My Photo</a>
+                </li>
+                <li id="favor_image" class="nav_list_right_li">
+                    <a href="favor.html"><img src="../img/favor.png" width="16" height="16" alt="图标3">My Favorite</a>
+                </li>
+                <li id="login_image" class="nav_list_right_li">
+                    <a href="../index.html"><img src="../img/login.png" width="16" height="16" alt="图标4">Log in</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="content">
+    <div id="content_left">
+        <div>
+            <p>
+                <input type="text" placeholder="Search...">
+
+            </p>
+            <p>
+                <input type="button" id="content_left_search_button" onclick="alert('已搜索')">
+            </p>
+        </div>
+        <table>
+            <tr>
+                <th>Hot Content</th>
+            </tr>
+            <tr>
+                <td><label onclick="alert('Nature')">Nature</label></td>
+            </tr>
+            <tr>
+                <td><label onclick="alert('History')">History</label></td>
+            </tr>
+            <tr>
+                <td><label onclick="alert('Other')">Other</label></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Hot Country</th>
+            </tr>
+            <tr>
+                <td><label onclick="alert('China')">China</label></td>
+            </tr>
+            <tr>
+                <td><label onclick="alert('Japan')">Japan</label></td>
+            </tr>
+            <tr>
+                <td><label onclick="alert('Italy')">Italy</label></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>Hot City</th>
+            </tr>
+            <tr>
+                <td><label onclick="alert('Shanghai')">Shanghai</label></td>
+            </tr>
+            <tr>
+                <td><label onclick="alert('Florance')">Florence</label></td>
+            </tr>
+            <tr>
+                <td><label onclick="alert('Osaka')">Osaka</label></td>
+            </tr>
+        </table>
+    </div>
+    <div id="content_right">
+        <div id="content_title"><h3>Filter</h3></div>
+        <div>
+            <select name="filter" id="filter_content">
+                <option value="choose_content">choose content</option>
+                <option value="nature">Nature</option>
+                <option value="history">History</option>
+                <option value="other">Other</option>
+            </select>
+            <select name="filter" id="filter_country" onfocus="set_select_country()" onchange="set_select_city()">
+                <option value="0">选择国家</option>
+            </select>
+            <select name="filter" id="filter_city">
+                <option value="0">选择城市</option>
+            </select>
+            <input type="button" value="filter" onclick="alert('筛选成功')">
+        </div>
+        <div>
+            <div class="content_display_col">
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser1.jpg" alt="img1">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser2.jpg" alt="img2">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser3.jpg" alt="img3">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser4.jpg" alt="img4">
+                </a></div>
+            </div>
+            <div class="content_display_col">
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser5.jpg" alt="img5">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser6.jpg" alt="img6">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser7.jpg" alt="img7">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser8.jpg" alt="img8">
+                </a></div>
+            </div>
+            <div class="content_display_col">
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser9.jpg" alt="img9">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser10.jpg" alt="img10">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser11.jpg" alt="img11">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser12.jpg" alt="img12">
+                </a></div>
+            </div>
+            <div class="content_display_col">
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser13.jpg" alt="img13">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser14.jpg" alt="img14">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser15.jpg" alt="img15">
+                </a></div>
+                <div class="content_display_container"><a href="details.html">
+                    <img class="content_display_img" src="../img/browser16.jpg" alt="img16">
+                </a></div>
+            </div>
+        </div>
+        <div class="content_page">
+            <span id="previous_page">&lt;</span>
+            <span id="content_page_number">1</span> 2 3 4 5 6 ... 9
+            <span id="next_page">&gt;</span>
+        </div>
+    </div>
+</div>
+<div id="footer"><!--页尾-->
+    <span>Copyright &copy; 2019-2020 Web fundamental.All Rights Reserved.L0033</span>
+</div>
+</body>
+</html>

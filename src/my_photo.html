@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My photo</title>
+    <link rel="stylesheet" href="style_sheet/Reset.css">
+    <link rel="stylesheet" href="style_sheet/nav.css">
+    <link rel="stylesheet" href="style_sheet/footer&background1.css">
+    <link rel="stylesheet" href="style_sheet/my_photo.css">
+</head>
+<body>
+<div class="nav"><!--导航栏-->
+    <ul>
+        <img id="user_default_image" class="nav_list_left" src="../img/user_default_image.jpg" width="40" height="40"
+             alt="这是用户默认头像">
+        <li id="nav_home" class="nav_list_left">
+            <a href="Home.html">Home</a>
+        </li>
+        <li id="nav_browser" class="nav_list_left">
+            <a href="Browser.html">Browser</a>
+        </li>
+        <li id="nav_search" class="nav_list_left">
+            <a href="Search.html">Search</a>
+        </li>
+        <li class="nav_list_right">
+            <a href="#">My account ▼</a>
+            <ul>
+                <li id="upload_image" class="nav_list_right_li">
+                    <a href="Upload.html"><img src="../img/upload.png" width="16" height="16" alt="图标1">Upload</a>
+                </li>
+                <li id="photo_image" class="nav_list_right_li">
+                    <a href="my_photo.html"><img src="../img/photo.png" width="16" height="16" alt="图标2">My Photo</a>
+                </li>
+                <li id="favor_image" class="nav_list_right_li">
+                    <a href="favor.html"><img src="../img/favor.png" width="16" height="16" alt="图标3">My Favorite</a>
+                </li>
+                <li id="login_image" class="nav_list_right_li">
+                    <a href="../index.html"><img src="../img/login.png" width="16" height="16" alt="图标4">Log in</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="content">
+    <div class="content_photo">
+        <div id="content_title"><h3>My photo</h3></div>
+        <div id="content_part01" class="content_part">
+            <div class="content_img_container">
+                <a href="details.html">
+                    <img class="content_img" src="../img/photo_img1.jpg" alt="图片1">
+                </a>
+            </div>
+            <div class="content_text_container">
+                <div class="content_text">
+                    <h4>title1</h4>
+                    <p>
+                        1このソフトウエアを使用することによって発生した損害・トラブル等 、著作権者は一切の責を負わないものとします
+                    </p>
+                </div>
+                <div class="content_button">
+                    <a href="Upload.html"><input class="content_button_modify" type="button" value="Modify"></a>
+                    <input class="content_button_delete" type="button" value="Delete" onclick="alert('已删除')">
+                </div>
+            </div>
+        </div>
+        <div id="content_part02" class="content_part">
+            <div class="content_img_container">
+                <a href="details.html">
+                    <img class="content_img" src="../img/photo_img2.jpg" alt="图片2">
+                </a>
+            </div>
+            <div class="content_text_container">
+                <div class="content_text">
+                    <h4>title2</h4>
+                    <p>
+                        2このソフトウエアを使用することによって発生した損害・トラブル等、著作権者は一切の責を負わないものとします
+                        このソフトウエアを使用することによって発生した損害・トラブル等、著作権者は一切の責を負わないものとします
+                </div>
+                <div class="content_button">
+                    <a href="Upload.html"><input class="content_button_modify" type="button" value="Modify"></a>
+                    <input class="content_button_delete" type="button" value="Delete" onclick="alert('已删除')">
+                </div>
+            </div>
+        </div>
+        <div id="content_part03" class="content_part">
+            <div class="content_img_container">
+                <a href="details.html">
+                    <img class="content_img" src="../img/photo_img3.jpg" alt="图片3">
+                </a>
+            </div>
+            <div class="content_text_container">
+                <div class="content_text">
+                    <h4>title3</h4>
+                    <p>
+                        3このソフトウエアを使用することによって発生した損害・トラブル等、著作権者は一切の責を負わないものとします
+                    </p>
+                </div>
+                <div class="content_button">
+                    <a href="Upload.html"><input class="content_button_modify" type="button" value="Modify"></a>
+                    <input class="content_button_delete" type="button" value="Delete" onclick="alert('已删除')">
+                </div>
+            </div>
+        </div>
+        <div id="content_part04" class="content_part">
+            <div class="content_img_container">
+                <a href="details.html">
+                    <img class="content_img" src="../img/photo_img4.jpg" alt="图片4">
+                </a>
+            </div>
+            <div class="content_text_container">
+                <div class="content_text">
+                    <h4>title4</h4>
+                    <p>
+                        4このソフトウエアを使用することによって発生した損害・トラブル等、著作権者は一切の責を負わないものとします
+                    </p>
+                </div>
+                <div class="content_button">
+                    <a href="Upload.html"><input class="content_button_modify" type="button" value="Modify"></a>
+                    <input class="content_button_delete" type="button" value="Delete" onclick="alert('已删除')">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content_page">
+        <span id="previous_page">&lt;</span>
+        <span id="content_page_number">1</span> 2 3 4 5 6 ... 9
+        <span id="next_page">&gt;</span>
+    </div>
+</div>
+<div id="footer"><!--页尾-->
+    <span>Copyright &copy; 2019-2020 Web fundamental.All Rights Reserved.L00335856757576465465465464747</span>
+</div>
+</body>
+</html>

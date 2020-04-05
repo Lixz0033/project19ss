@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log in</title>
+    <link rel="stylesheet" href="src/style_sheet/Reset.css">
+    <link rel="stylesheet" href="src/style_sheet/login.css">
+</head>
+<body>
+<div id="form">
+    <div id="form_header"><!--表单标题-->
+        <img id="user_default_image" src="img/user_default_image.jpg" width="70" height="70" alt="这是用户默认头像">
+        <h2 id="title">Sign up for Fisher</h2>
+    </div>
+    <div class="form_content"><!--表单内容-->
+        <form action="src/Home.html" method="get">
+            <div>
+                <p>Username/E-mail:</p>
+                <input class="form_information" type="text" placeholder="用户名"
+                       pattern="[0-9a-zA-Z_]+">
+            </div>
+            <div>
+                <p>Password:</p>
+                <input class="form_information" type="password" placeholder="密码"
+                       pattern="[0-9a-zA-Z]{9,}">
+            </div>
+            <div><br><!--登录按钮-->
+                    <input class=" form_information" id="form_sign_in" type="submit" value="Sign in">
+            </div>
+        </form>
+    </div>
+    <div class="form_new_account_register">
+        <p>New to Fisher?<a href="src/register.html">Create a new account?</a></p>
+    </div>
+</div>
+<div id="footer"><!--页尾-->
+    <span>Copyright &copy; 2019-2020 Web fundamental.All Rights Reserved.L0033</span>
+</div>
+</body>
+</html>
